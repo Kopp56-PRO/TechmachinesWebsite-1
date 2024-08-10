@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techmachines</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Techmachines</h1>
+        <div class="user-section">
+            <span id="username"></span>
+            <button id="sign-in-button" onclick="location.href='Login/index.html'">Sign In</button>
+            <a id="settings-link" href="Settings/settings.html" style="display: none;">Settings</a>
+        </div>
+    </header>
+<!-- VM Card -->
+                <div class="card vm-card" onclick="location.href='VM/VM.html'">
+                    <picture>
+                        <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&amp;hei=213&amp;fit=crop" media="(min-width: 1400px)">
+                        <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&amp;hei=213&amp;fit=crop" media="(min-width: 1084px)">
+                        <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&amp;hei=213&amp;fit=crop" media="(min-width: 860px)">
+                        <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&amp;hei=213&amp;fit=crop" media="(min-width: 540px)">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&amp;hei=213&amp;fit=crop" loading="lazy" class="card-img" alt="Particular VM">
+                    </picture>
+                    <div class="card-body">
+                        <h2 class="h3">Particular VM</h2>
+                        <p>Experience premium virtual machines with exceptional performance and features. Click here to learn more and request a VM.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-gold" aria-label="Request Particular VM" href="VM/VM.html">
+                            Request
+                        </a>
+                    </div>
+                </div>
+
+    <div class="content">
+        <div class="col" style="cursor: pointer;">
+            <div class="card material-card h-100" onclick="location.href='HowToHostAmongUsModdedLobbies/index.html'">
+                <picture>
+                    <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" media="(min-width: 1400px)">
+                    <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=297&hei=167&fit=crop" media="(min-width: 1084px)">
+                    <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=517&hei=293&fit=crop" media="(min-width: 860px)">
+                    <source srcset="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=406&hei=230&fit=crop" media="(min-width: 540px)">
+                    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=406&hei=230&fit=crop" loading="lazy" class="card-img" alt="Among Us modded lobbies">
+                </picture>
+                
+                <div class="card-body px-4 pt-4">
+                    <h2 class="h3">How to host Among Us modded lobbies anywhere!</h2>
+                    <p>Learn how to host Among Us modded lobbies using Parsec, TeamViewer, or Anydesk.</p>
+                </div>
+                <div class="card-footer pt-3 px-4 pb-4">
+                    <div class="link-group">
+                        <a class="btn btn-primary" aria-label="Host Among Us modded lobbies" target="_self" href="HowToHostAmongUsModdedLobbies/index.html">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="homepage.js"></script>
+</body>
+</html>

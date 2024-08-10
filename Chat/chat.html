@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techmachines Chat</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <h1>Techmachines Chat</h1>
+            <div id="ticketsContainer" class="channels"></div>
+            <div class="account">
+                <span id="username">User</span>
+                <a href="..\Settings\settings.html" class="settings">⚙️</a>
+            </div>
+        </div>
+        <div class="chat">
+            <div class="topbar">
+                <span>Techmachines Chat</span>
+                <button id="deleteTicketBtn" style="float: right; background-color: red; color: white;">Delete Ticket</button>
+            </div>
+            <div class="messages" id="messageContainer"></div>
+            <div class="input-area">
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged In</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Use the same stylesheet -->
+    <style>
+        /* Additional styles specific to loggedin.html */
+        .logged-in-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .welcome-message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .user-info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            padding: 15px;
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .button-container button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logged-in-container">
+            <div class="welcome-message">
+                Welcome Back!
+            </div>
+            <div class="user-info">
+                <p>You are now logged in.</p>
+                <p>We’re glad to see you again.</p>
+            </div>
+            <div class="button-container">
+                <button onclick="window.location.href='index.html'">Log Out</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

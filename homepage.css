@@ -1,0 +1,225 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    color: #333333;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+#username {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+#sign-in-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0078d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+
+#settings-link {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0078d4;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    width: 300px; /* Adjust card width */
+    margin: 0 auto; /* Center the card */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 10px; /* Adjust card body padding */
+}
+
+.card-footer {
+    padding: 10px; /* Adjust card footer padding */
+    background-color: #f9f9f9;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #0078d4;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #005a9e;
+}
+/* Default (light theme) styles */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-background: #0078d4;
+    --button-text-color: #ffffff;
+    --button-hover-background: #005a9e;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] {
+    --background-color: #1e1e1e;
+    --text-color: #dcdcdc;
+    --button-background: #1e1e1e;
+    --button-text-color: #0078d4;
+    --button-hover-background: #0078d4;
+}
+
+/* Apply the styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+}
+
+button:hover {
+    background-color: var(--button-hover-background);
+}
+
+a {
+    color: var(--button-background);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --background-color: #333333;
+    --text-color: #ffffff;
+}
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header.dark-mode, footer.dark-mode, .title-bar.dark-mode, .sidebar.dark-mode, .content.dark-mode {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+/* Common styles */
+.header, .content, .sidebar, .title-bar, footer {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button styles */
+button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+/* Dark mode button styles */
+button.dark-mode {
+    background-color: #333333;
+    color: white;
+}
+
+button.dark-mode:hover {
+    background-color: #555555;
+}
+/* Specific styles for h1, h2, and the username element in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode #username {
+    color: #ffffff;
+}
+/* Card styling for dark mode */
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .card p {
+    color: #ffffff;
+}
+
+body.dark-mode .card-footer {
+    background-color: #1e1e1e;
+}
+
+/* Specific styling for links and buttons in cards */
+body.dark-mode .card a {
+    color: #1e90ff; /* Light blue for contrast */
+}
+
+body.dark-mode .card a:hover {
+    color: #63a4ff; /* Slightly lighter blue for hover effect */
+}
+
+body.dark-mode .card .btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .card .btn:hover {
+    background-color: #555555;
+}

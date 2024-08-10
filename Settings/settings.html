@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css"> <!-- Correct path -->
+</head>
+<body>
+    <div id="settings-content">
+        <!-- Main settings content -->
+        <header>
+            <h1>Techmachines Settings</h1>
+            <button id="logout-button">Log Out</button>
+        </header>
+        <main>
+            <div class="sidebar">
+                <ul class="tabs">
+                    <li class="tab" data-tab="account">Account</li>
+                    <li class="tab" data-tab="appearance">Appearance</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div id="account" class="tab-content">
+                    <h2>Account Settings</h2>
+                    <button id="change-password">Change Password</button>
+                    <button id="two-factor-auth">Two-Factor Authentication</button>
+                    <button id="delete-account">Delete Account</button>
+                </div>
+                <div id="appearance" class="tab-content">
+                    <h2>Appearance Settings</h2>
+                    <label for="light-theme">
+                        <input type="radio" id="light-theme" name="theme" value="light"> Light Theme
+                    </label>
+                    <label for="dark-theme">
+                        <input type="radio" id="dark-theme" name="theme" value="dark"> Dark Theme
+                    </label>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div id="login-first-screen" style="display: none;">
+        <div class="login-container">
+            <h2>Log In First</h2>
+            <a href="../Login/index.html" class="button">Log In</a>
+        </div>
+    </div>
+    <script src="settings.js"></script> <!-- Correct path -->
+</body>
+</html>

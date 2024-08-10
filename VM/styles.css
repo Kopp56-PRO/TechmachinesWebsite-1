@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* White background color */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 1200px; /* Increased max-width */
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.title-link {
+    font-size: 30px;
+    color: #0078d4; /* Primary color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title-link:hover {
+    text-decoration: underline;
+}
+
+.title-bar {
+    background-color: #ffd700; /* Gold color for title bar */
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.title-bar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.text-updating {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #ffd700; /* Gold button color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #e5c24b; /* Slightly darker gold on hover */
+}

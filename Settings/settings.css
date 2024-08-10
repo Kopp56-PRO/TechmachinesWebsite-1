@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tabs and Content */
+.sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    float: left;
+}
+
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #e0e0e0;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 10px;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Button Styles */
+button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+/* Log In First Screen */
+#login-first-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.login-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0078d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container .button:hover {
+    background-color: #005a9e;
+}
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header.dark-mode, footer.dark-mode, .title-bar.dark-mode, .sidebar.dark-mode, .content.dark-mode {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+/* Common styles */
+.header, .content, .sidebar, .title-bar, footer {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Button styles */
+button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005a9e;
+}
+
+/* Dark mode button styles */
+button.dark-mode {
+    background-color: #333333;
+    color: white;
+}
+
+button.dark-mode:hover {
+    background-color: #555555;
+}
+/* Specific styles for h1, h2, and the username element in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode #username {
+    color: #ffffff;
+}
+/* Card styling for dark mode */
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .card p {
+    color: #ffffff;
+}
+
+body.dark-mode .card-footer {
+    background-color: #1e1e1e;
+}
+
+/* Specific styling for links and buttons in cards */
+body.dark-mode .card a {
+    color: #1e90ff; /* Light blue for contrast */
+}
+
+body.dark-mode .card a:hover {
+    color: #63a4ff; /* Slightly lighter blue for hover effect */
+}
+
+body.dark-mode .card .btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .card .btn:hover {
+    background-color: #555555;
+}
