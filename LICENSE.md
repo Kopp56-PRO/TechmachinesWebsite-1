@@ -14,7 +14,7 @@ This website and all its content, including but not limited to HTML, CSS, JavaSc
    You may not distribute, publish, or share any part of the Website or its content in any form.
 
 4. **No Use:**  
-   You may not use the Website or its content for any purpose, including personal, educational, or commercial, without explicit written permission from [Your Name or Company].
+   You may not use the Website or its content for any purpose, including personal, educational, or commercial, without explicit written permission from Kopp56.
 
 5. **No Forking:**  
    You may not fork, replicate, or create a new project based on any part of the Website or its content.
