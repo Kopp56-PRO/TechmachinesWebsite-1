@@ -1,68 +1,44 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f4f4f4;
 }
-
-.login-container {
-    background: #ffffff;
+#login-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 20px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 1.5em;
 }
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #dcdcdc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
 button {
-    padding: 10px;
-    font-size: 16px;
-    color: #ffffff;
     background-color: #0078d4;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.8em 2em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 1.5em;
 }
-
 button:hover {
-    background-color: #005a9e;
+    background-color: #005ea6;
 }
-
+p {
+    font-size: 0.9em;
+    color: #333;
+}
 a {
     color: #0078d4;
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
-}
-
-#message {
-    margin-bottom: 20px;
-    color: #ff0000;
 }
