@@ -1,0 +1,17 @@
+{
+  "name": "TechmachinesWebsite",
+  "version": "1.0.0",
+  "description": "A web application with a frontend and API backend",
+  "scripts": {
+    "dev": "Kopp56 e Vini",
+    "build": "echo 'No build step for static files'",
+    "start": "vercel start"
+  },
+  "dependencies": {
+    "sqlite": "^5.0.0",
+    "sqlite3": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.x"
+  }
+}
