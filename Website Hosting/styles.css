@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.title {
+    font-size: 24px;
+    color: #333333;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+#username {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+button, .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #0078d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+button:hover, .btn:hover {
+    background-color: #005a9e;
+}
+
+#settings-link {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #0078d4;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between the cards */
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+/* Card styles */
+.card {
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    width: 300px; /* Set a fixed width for the card */
+    margin: 20px auto; /* Center the card horizontally */
+    cursor: pointer; /* Make the entire card clickable */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body, .card-footer {
+    padding: 10px;
+}
+
+.card-footer {
+    background-color: #f9f9f9;
+}
+
+/* Themes */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-background: #0078d4;
+    --button-text-color: #ffffff;
+    --button-hover-background: #005a9e;
+}
+
+/* Dark theme styles */
+[data-theme="dark"] {
+    --background-color: #1e1e1e;
+    --text-color: #dcdcdc;
+    --button-background: #1e1e1e;
+    --button-text-color: #0078d4;
+    --button-hover-background: #0078d4;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.header.dark-mode, .content.dark-mode {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode #username {
+    color: #ffffff;
+}
+
+/* Card styling for dark mode */
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card h2,
+body.dark-mode .card p {
+    color: #ffffff;
+}
+
+body.dark-mode .card-footer {
+    background-color: #1e1e1e;
+}
+
+/* Specific styling for links and buttons in cards */
+body.dark-mode .card a {
+    color: #1e90ff; /* Light blue for contrast */
+}
+
+body.dark-mode .card a:hover {
+    color: #63a4ff; /* Slightly lighter blue for hover effect */
+}
+
+body.dark-mode .card .btn {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode .card .btn:hover {
+    background-color: #555555;
+}
